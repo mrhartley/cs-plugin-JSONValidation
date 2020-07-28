@@ -7,5 +7,6 @@
     <application-version min="20.2" />
   </plugin-info>
 
-  <function key="jsonValidator" class="com.appiancorp.cs.plugins.jsonvalidation.JsonValidator" />
+  <function key="validatejson" class="com.appiancorp.cs.plugins.jsonvalidation.JsonValidator" />
+  
 </appian-plugin>
