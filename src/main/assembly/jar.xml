@@ -29,14 +29,74 @@
   </dependencySets>
 
   <!-- Add system dependencies -->
-  <!--
+  
   <files>
     <file>
-      <source>${basedir}/build-tools/lib/my-non-maven-lib/my-non-maven-lib-1.0.jar</source>
+      <source>${basedir}/src/main/assembly/btf-1.2.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/failureaccess-1.0.1.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/google-api-client-1.30.10.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/guava-29.0-jre.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/jackson-annotations-2.11.1.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/jackson-core-2.11.1.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/jackson-coreutils-1.8.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/jackson-databind-2.11.1.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/javax.mail-api-1.6.2.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/joda-time-2.10.6.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/json-schema-validator-2.2.6.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/json-schema-core-1.2.5.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/libphonenumber-3.5.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/log4j-1.2.17.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/msg-simple-1.1.jar</source>
+      <outputDirectory>/META-INF/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/assembly/uri-template-0.9.jar</source>
       <outputDirectory>/META-INF/lib</outputDirectory>
     </file>
   </files>
-  -->
+  
 
   <!-- Add sources -->
   <fileSets>

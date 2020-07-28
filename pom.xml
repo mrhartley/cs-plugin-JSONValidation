@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.appiancorp.cs</groupId>
-  <artifactId>JSONValidation</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <artifactId>com.appiancorp.cs.plugins.jsonvalidation</artifactId>
+  <version>1.5.21-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>JSONValidation</name>
   <description>Validates JSON source data against a schema</description>
@@ -30,7 +31,7 @@
       <artifactId>appian</artifactId>
       <version>17.2.0</version>
       <scope>system</scope>
-      <systemPath>${basedir}/build-tools/lib/appian/20.2.0/_admin/sdk/appian-plug-in-sdk.jar</systemPath>
+      <systemPath>${basedir}/build-tools/lib/appian/17.2.0/_admin/sdk/appian-plug-in-sdk.jar</systemPath>
     </dependency>
 
     <!-- FGE Dependencies -->

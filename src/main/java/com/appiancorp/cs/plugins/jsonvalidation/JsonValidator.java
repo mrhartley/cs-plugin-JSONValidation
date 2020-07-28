@@ -16,17 +16,8 @@ public class JsonValidator {
   @Category("category.name.LogicalFunctions")
 
   @Function
-  public static String validateJson(@Parameter String schemaUsed, @Parameter String jsonData) throws IOException, ProcessingException {
-
-    logger.info("Validate JSON Called");
-
-    if (ValidationUtils.isJsonValid(schemaUsed, jsonData)) {
-      logger.info("JSON is valid");
-      return "Valid";
-    } else {
-      logger.info("JSON is invalid");
-      return "Invalid";
-    }
+  public static boolean validateJson(@Parameter String schemaUsed, @Parameter String jsonData) throws IOException, ProcessingException {
+    return ValidationUtils.isJsonValid(schemaUsed, jsonData);
   }
 
 }
