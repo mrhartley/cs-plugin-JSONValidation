@@ -10,14 +10,14 @@
 
   <dependencySets>
     <!-- Add jar dependencies to META-INF/lib -->
-    <!--
+    
     <dependencySet>
       <outputDirectory>/META-INF/lib</outputDirectory>
       <includes>
-        <include>groupId:artifactId</include>
+        <include>com.appiancorp.cs:JSONValidation</include>
       </includes>
     </dependencySet>
-    -->
+    
 
     <!-- Add unpacked classes and resources -->
     <dependencySet>
