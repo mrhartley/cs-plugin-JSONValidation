@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.appiancorp.ps</groupId>
-  <artifactId>COMPLETE_ME</artifactId>
+  <groupId>com.appiancorp.cs</groupId>
+  <artifactId>JSONValidation</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>COMPLETE_ME</name>
-  <description>COMPLETE_ME</description>
-  <url>https://github.com/appianps/ps-plugin-COMPLETE_ME</url>
+  <name>JSONValidation</name>
+  <description>Validates JSON source data against a schema</description>
+  <url>https://github.com/mrhartley/cs-plugin-JSONValidation</url>
 
   <scm>
-    <connection>scm:git:git://github.com/appianps/ps-plugin-COMPLETE_ME</connection>
-    <url>https://github.com/appianps/ps-plugin-COMPLETE_ME</url>
+    <connection>scm:git:git://github.com/mrhartley/cs-plugin-JSONValidation</connection>
+    <url>https://github.com/mrhartley/cs-plugin-JSONValidation</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -30,11 +30,29 @@
       <artifactId>appian</artifactId>
       <version>17.2.0</version>
       <scope>system</scope>
-      <systemPath>${basedir}/build-tools/lib/appian/17.2.0/_admin/sdk/appian-plug-in-sdk.jar</systemPath>
+      <systemPath>${basedir}/build-tools/lib/appian/20.2.0/_admin/sdk/appian-plug-in-sdk.jar</systemPath>
     </dependency>
 
-    <!-- Add YOUR dependencies here -->
-
+    <!-- FGE Dependencies -->
+   <!-- https://mvnrepository.com/artifact/com.github.fge/json-schema-validator -->
+	<dependency>
+		<groupId>com.github.fge</groupId>
+		<artifactId>json-schema-validator</artifactId>
+		<version>2.2.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.github.fge/jackson-coreutils -->
+	<dependency>
+		<groupId>com.github.fge</groupId>
+		<artifactId>jackson-coreutils</artifactId>
+		<version>1.8</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.github.fge/json-schema-core -->
+	<dependency>
+		<groupId>com.github.fge</groupId>
+		<artifactId>json-schema-core</artifactId>
+		<version>1.2.5</version>
+	</dependency>
+		
     <!-- Most common dependencies provided by Appian plug-in framework OOTB -->
     <!-- https://docs.appian.com/suite/help/latest/Custom_Plug-in_Packages.html -->
     <dependency>
@@ -55,13 +73,12 @@
       <version>2.6</version>
       <scope>provided</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
-      <scope>provided</scope>
+       <groupId>log4j</groupId>
+       <artifactId>log4j</artifactId>
+       <version>1.2.17</version>
     </dependency>
-
     <!-- test dependencies -->
     <dependency>
       <groupId>junit</groupId>
